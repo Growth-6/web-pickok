@@ -1,14 +1,14 @@
-import { useForm } from 'react-hook-form'
-import { yupResolver } from '@hookform/resolvers/yup'
-import * as yup from 'yup'
+import { useForm } from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from 'yup';
 
 interface FormData {
-  name: string
+  name: string;
 }
 
 const schema = yup.object().shape({
   name: yup.string().required('Name is required'),
-})
+});
 
 export const Form = () => {
   const {
@@ -17,11 +17,11 @@ export const Form = () => {
     formState: { errors },
   } = useForm<FormData>({
     resolver: yupResolver(schema),
-  })
+  });
 
   const onSubmit = (data: FormData) => {
-    console.log(data)
-  }
+    console.log(data);
+  };
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
@@ -32,5 +32,5 @@ export const Form = () => {
       </div>
       <button type="submit">Submit</button>
     </form>
-  )
-}
+  );
+};
