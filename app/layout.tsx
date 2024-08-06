@@ -4,6 +4,8 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
 import '@/styles/globals.css';
+import '@/styles/reset.css';
+
 import theme from '@/styles/theme';
 import { ThemeProvider } from '@emotion/react';
 
