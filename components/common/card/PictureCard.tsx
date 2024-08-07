@@ -8,21 +8,30 @@ interface IProps {
   name: string;
   address: string;
   image: string;
-  pick?: boolean;
+  picked?: boolean;
+  bookmarked?: boolean;
 }
 
-const PictureCard = ({ name, address, image, pick }: IProps) => {
+const PictureCard = ({ name, address, image, picked, bookmarked }: IProps) => {
   return (
     <CardContainer>
       <ImageContainer>
         <Image src={image} alt="섬네일" layout="fill" objectFit="cover" />
       </ImageContainer>
-      {pick ? (
+      {picked ? (
         <PickContainer>
           <Pick />
         </PickContainer>
       ) : null}
-      <BookmarkButton>북마크버튼</BookmarkButton>
+      <BookmarkButton>
+        <Image
+          src={`/icons/bookmark-${bookmarked ? 'fill' : 'white'}.svg`}
+          alt="bookmark"
+          width={28}
+          height={28}
+          objectFit="contain"
+        />
+      </BookmarkButton>
       <InfoContainer>
         <span>{name}님</span>
         <p>{address}</p>
@@ -61,6 +70,7 @@ const InfoContainer = styled.div`
 `;
 
 const BookmarkButton = styled.button`
+  display: flex;
   position: absolute;
   top: 20px;
   right: 20px;

@@ -8,9 +8,16 @@ interface IProps {
   placeType: string;
   address: string;
   image: string;
+  bookmarked?: boolean;
 }
 
-const MainCard = ({ placeName, placeType, address, image }: IProps) => {
+const MainCard = ({
+  placeName,
+  placeType,
+  address,
+  image,
+  bookmarked,
+}: IProps) => {
   return (
     <CardContainer>
       <ImageContainer>
@@ -24,7 +31,15 @@ const MainCard = ({ placeName, placeType, address, image }: IProps) => {
           </div>
           <p>{address}</p>
         </CardInfo>
-        <button>북마크버튼</button>
+        <BookmarkButton>
+          <Image
+            src={`/icons/bookmark${bookmarked ? '-fill' : ''}.svg`}
+            alt="bookmark"
+            width={30}
+            height={30}
+            objectFit="contain"
+          />
+        </BookmarkButton>
       </CardInfoContainer>
     </CardContainer>
   );
@@ -70,4 +85,8 @@ export const CardInfo = styled.div`
       color: ${({ theme }) => theme.colors.gray3};
     }
   }
+`;
+
+const BookmarkButton = styled.button`
+  display: flex;
 `;
