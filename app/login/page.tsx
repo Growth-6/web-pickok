@@ -71,6 +71,9 @@ height: 100vh;
 
 const TextParagraph = emotionStyled.p`
   color: ${({ theme }) => theme.colors.gray2}
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
 `;
 
 const LoginButton = emotionStyled.button`
