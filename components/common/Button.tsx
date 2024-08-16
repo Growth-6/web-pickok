@@ -3,7 +3,7 @@
 import styled from '@emotion/styled';
 import Image from 'next/image';
 
-interface IButton {
+interface IButton extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'filled' | 'outlined' | 'text';
   state?: 'enabled' | 'disabled';
   size?: 'small' | 'medium';
@@ -22,9 +22,10 @@ const Button = ({
   iconSrc = '',
   iconAlt = '',
   text,
+  ...rest
 }: IProps) => {
   return (
-    <ButtonContainer variant={variant} state={state} size={size}>
+    <ButtonContainer variant={variant} state={state} size={size} {...rest}>
       {iconSrc ? (
         <Image src={iconSrc} alt={iconAlt} width={24} height={24} />
       ) : null}
