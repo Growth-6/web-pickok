@@ -1,7 +1,13 @@
 import styled from '@emotion/styled';
 import Button from '../common/Button';
+import Search from '../common/Search';
+import { useState } from 'react';
 
 const MainBanner = () => {
+  const [searchValue, setSearchValue] = useState('');
+
+  const handleSearch = () => {};
+
   return (
     <Container imgUrl={'/images/banner.png'}>
       <ButtonContainer>
@@ -9,7 +15,12 @@ const MainBanner = () => {
       </ButtonContainer>
       <SearchContainer>
         <p>요새 MZ들 사이에 힙한 스팟이{'\n'}궁금하다면?</p>
-        <input placeholder="어느 도시로 떠나시나요?" />
+        <Search
+          value={searchValue}
+          setValue={setSearchValue}
+          placeholder="어느 도시로 떠나시나요?"
+          handleSearch={handleSearch}
+        />
       </SearchContainer>
     </Container>
   );
@@ -25,7 +36,7 @@ const Container = styled.div<{ imgUrl: string }>`
   position: relative;
   display: flex;
   align-items: end;
-  padding: 65px 133px;
+  padding: 60px 120px;
 `;
 
 const ButtonContainer = styled.div`
@@ -35,6 +46,7 @@ const ButtonContainer = styled.div`
 `;
 
 const SearchContainer = styled.div`
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 32px;
