@@ -8,15 +8,17 @@ const Header = () => {
   return (
     <Container>
       <div></div>
-      <Link href={'/'}>
-        <Image
-          src={'/images/logo.png'}
-          alt="픽콕 로고"
-          width={130}
-          height={25}
-          objectFit="contain"
-        />
-      </Link>
+      <h1>
+        <Link href={'/'}>
+          <Image
+            src={'/images/logo.png'}
+            alt="픽콕 로고"
+            width={130}
+            height={25}
+            objectFit="contain"
+          />
+        </Link>
+      </h1>
       <button>
         <Image
           src={'/icons/menu.svg'}
