@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import Button from '../common/Button';
-import MainCard from '../common/card/MainCard';
+import KokCard from '../common/card/KokCard';
 
 const HotKok = () => {
   return (
@@ -16,7 +16,7 @@ const HotKok = () => {
       <div>지도</div>
       <CardList>
         <li>
-          <MainCard
+          <KokCard
             placeName="경복궁"
             placeType="궁궐"
             address="서울 종로구 사직로 161 경복궁"
@@ -24,7 +24,7 @@ const HotKok = () => {
           />
         </li>
         <li>
-          <MainCard
+          <KokCard
             placeName="경복궁"
             placeType="궁궐"
             address="서울 종로구 사직로 161 경복궁"
@@ -32,7 +32,7 @@ const HotKok = () => {
           />
         </li>
         <li>
-          <MainCard
+          <KokCard
             placeName="경복궁"
             placeType="궁궐"
             address="서울 종로구 사직로 161 경복궁"

@@ -11,7 +11,7 @@ interface IProps {
   bookmarked?: boolean;
 }
 
-const MainCard = ({
+const KokCard = ({
   placeName,
   placeType,
   address,
@@ -50,7 +50,7 @@ const MainCard = ({
   );
 };
 
-export default MainCard;
+export default KokCard;
 
 const CardContainer = styled.div`
   display: flex;

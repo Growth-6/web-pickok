@@ -12,7 +12,7 @@ interface IProps {
   bookmarked?: boolean;
 }
 
-const PictureCard = ({ name, address, image, picked, bookmarked }: IProps) => {
+const PicCard = ({ name, address, image, picked, bookmarked }: IProps) => {
   return (
     <CardContainer>
       <ImageContainer>
@@ -40,7 +40,7 @@ const PictureCard = ({ name, address, image, picked, bookmarked }: IProps) => {
   );
 };
 
-export default PictureCard;
+export default PicCard;
 
 const CardContainer = styled.div`
   position: relative;

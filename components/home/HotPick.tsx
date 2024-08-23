@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import Sort from './Sort';
-import PictureCard from '../common/card/PictureCard';
+import PicCard from '../common/card/PicCard';
 import { HOT_PICK_SORT_OPTIONS } from '@/contants/common';
 import { useState } from 'react';
 
@@ -23,7 +23,7 @@ const HotPick = () => {
       </TitleContainer>
       <CardList>
         <li>
-          <PictureCard
+          <PicCard
             name="김민경"
             address="서울 종로구 사직로 161 경복궁"
             image="/images/card-photo-sample.png"
@@ -31,28 +31,28 @@ const HotPick = () => {
           />
         </li>
         <li>
-          <PictureCard
+          <PicCard
             name="김민경"
             address="서울 종로구 사직로 161 경복궁"
             image="/images/card-photo-sample.png"
           />
         </li>
         <li>
-          <PictureCard
+          <PicCard
             name="김민경"
             address="서울 종로구 사직로 161 경복궁"
             image="/images/card-photo-sample.png"
           />
         </li>
         <li>
-          <PictureCard
+          <PicCard
             name="김민경"
             address="서울 종로구 사직로 161 경복궁"
             image="/images/card-photo-sample.png"
           />
         </li>
         <li>
-          <PictureCard
+          <PicCard
             name="김민경"
             address="서울 종로구 사직로 161 경복궁"
             image="/images/card-photo-sample.png"

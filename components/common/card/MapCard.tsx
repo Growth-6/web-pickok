@@ -2,7 +2,7 @@
 
 import styled from '@emotion/styled';
 import Image from 'next/image';
-import { CardInfo, CardInfoContainer } from './MainCard';
+import { CardInfo, CardInfoContainer } from './KokCard';
 
 interface IProps {
   placeName: string;
