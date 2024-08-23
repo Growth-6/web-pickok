@@ -22,32 +22,42 @@ const HotPick = () => {
         />
       </TitleContainer>
       <CardList>
-        <PictureCard
-          name="김민경"
-          address="서울 종로구 사직로 161 경복궁"
-          image="/images/card-photo-sample.png"
-          picked
-        />
-        <PictureCard
-          name="김민경"
-          address="서울 종로구 사직로 161 경복궁"
-          image="/images/card-photo-sample.png"
-        />
-        <PictureCard
-          name="김민경"
-          address="서울 종로구 사직로 161 경복궁"
-          image="/images/card-photo-sample.png"
-        />
-        <PictureCard
-          name="김민경"
-          address="서울 종로구 사직로 161 경복궁"
-          image="/images/card-photo-sample.png"
-        />
-        <PictureCard
-          name="김민경"
-          address="서울 종로구 사직로 161 경복궁"
-          image="/images/card-photo-sample.png"
-        />
+        <li>
+          <PictureCard
+            name="김민경"
+            address="서울 종로구 사직로 161 경복궁"
+            image="/images/card-photo-sample.png"
+            picked
+          />
+        </li>
+        <li>
+          <PictureCard
+            name="김민경"
+            address="서울 종로구 사직로 161 경복궁"
+            image="/images/card-photo-sample.png"
+          />
+        </li>
+        <li>
+          <PictureCard
+            name="김민경"
+            address="서울 종로구 사직로 161 경복궁"
+            image="/images/card-photo-sample.png"
+          />
+        </li>
+        <li>
+          <PictureCard
+            name="김민경"
+            address="서울 종로구 사직로 161 경복궁"
+            image="/images/card-photo-sample.png"
+          />
+        </li>
+        <li>
+          <PictureCard
+            name="김민경"
+            address="서울 종로구 사직로 161 경복궁"
+            image="/images/card-photo-sample.png"
+          />
+        </li>
       </CardList>
     </Container>
   );
@@ -75,4 +85,7 @@ const CardList = styled.ul`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  & > li:first-of-type {
+    grid-column: 1 / span 2;
+  }
 `;
