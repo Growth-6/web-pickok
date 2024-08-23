@@ -1,13 +1,25 @@
 import styled from '@emotion/styled';
 import Sort from './Sort';
 import PictureCard from '../common/card/PictureCard';
+import { HOT_PICK_SORT_OPTIONS } from '@/contants/common';
+import { useState } from 'react';
 
 const HotPick = () => {
+  const [sort, setSort] = useState(1);
+
+  const handleChangeSort = (value: number) => {
+    setSort(value);
+  };
+
   return (
     <Container>
       <TitleContainer>
         <h2>이번주 가장 핫한 픽은?</h2>
-        <Sort />
+        <Sort
+          options={HOT_PICK_SORT_OPTIONS}
+          sort={sort}
+          handleChangeSort={handleChangeSort}
+        />
       </TitleContainer>
       <CardList>
         <PictureCard
