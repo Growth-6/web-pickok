@@ -21,7 +21,12 @@ const MainCard = ({
   return (
     <CardContainer>
       <ImageContainer>
-        <Image src={image} alt="섬네일" layout="fill" objectFit="cover" />
+        <Image
+          src={image}
+          alt={`${placeName} 섬네일`}
+          layout="fill"
+          objectFit="cover"
+        />
       </ImageContainer>
       <CardInfoContainer>
         <CardInfo>
@@ -55,7 +60,7 @@ const CardContainer = styled.div`
 
 const ImageContainer = styled.div`
   position: relative;
-  height: 230px;
+  height: 220px;
   img {
     border-radius: 30px;
   }

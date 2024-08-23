@@ -62,9 +62,7 @@ const ButtonList = styled.ul`
 `;
 
 const CardList = styled.ul`
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  li {
-    width: 100%;
-  }
 `;
