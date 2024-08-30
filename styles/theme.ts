@@ -19,58 +19,22 @@ const theme: Theme = {
     dim: 'rgba(33, 33, 33, 0.7)',
   },
 
-  fonts: {
+  fontSizes: {
     pc: {
-      head1: `
-        fontSize: '32px',
-        lineHeight: '150%',
-      `,
-      head2: `
-        fontSize: '24px',
-        lineHeight: '150%',
-      `,
-      body1: `
-        fontSize: '20px',
-        lineHeight: '150%',
-      `,
-      body2: `
-        fontSize: '18px',
-        lineHeight: '150%',
-      `,
-      body3: `
-        fontSize: '16px',
-        lineHeight: '150%',
-      `,
-      footer1: `
-        fontSize: '14px',
-        lineHeight: '150%',
-      `,
+      head1: '32px',
+      head2: '24px',
+      body1: '20px',
+      body2: '18px',
+      body3: '16px',
+      footer1: '14px',
     },
     mobile: {
-      head1: `
-        fontSize: '20px',
-        lineHeight: '150%',
-    `,
-      head2: `
-        fontSize: '18px',
-        lineHeight: '150%',
-      `,
-      body1: `
-        fontSize: '16px',
-        lineHeight: '150%',
-        `,
-      body2: `
-        fontSize: '14px',
-        lineHeight: '150%',
-      `,
-      body3: `
-        fontSize: '12px',
-        lineHeight: '150%',
-      `,
-      footer1: `
-        fontSize: '12px',
-        lineHeight: '150%',
-      `,
+      head1: '20px',
+      head2: '18px',
+      body1: '16px',
+      body2: '14px',
+      body3: '12px',
+      footer1: '12px',
     },
   },
 };

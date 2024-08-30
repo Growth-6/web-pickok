@@ -5,9 +5,7 @@ import { Inter } from 'next/font/google';
 
 import '@/styles/globals.css';
 import '@/styles/reset.css';
-
-import theme from '@/styles/theme';
-import { ThemeProvider } from '@emotion/react';
+import Providers from './Providers';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -24,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ThemeProvider theme={theme}>{children}</ThemeProvider>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

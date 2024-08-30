@@ -20,7 +20,7 @@ declare module '@emotion/react' {
       dim: string;
     };
 
-    fonts: {
+    fontSizes: {
       pc: {
         head1: string;
         head2: string;
